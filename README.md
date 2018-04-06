@@ -11,17 +11,17 @@ This library aims to...
 
 Trace:
 ```
-<file_name>:<line_number>:<function_name>    <Message>
+<file_name>:<line_number>:<function_name>()    <Message>
 ```
 
 Warning:
 ```
-<file_name>:<line_number>:<function_name>    WARNING: <Message>
+<file_name>:<line_number>:<function_name>()    WARNING: <Message>
 ```
 
 Error:
 ```
-<file_name>:<line_number>:<function_name>    ERROR: <Message>
+<file_name>:<line_number>:<function_name>()    ERROR: <Message>
 ```
 
 ## Macro list
