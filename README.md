@@ -36,13 +36,16 @@ main ( void )
     // Print an error trace
     ERROR( "This is an error trace" );
 
-    // Print a trace with parameters
+    // Print an error with parameters
     ERROR_P( "This is an error trace with %d parameter" , 1 );
 }
 ```
 
 Result:
 > demo.c:9:main()    This is a trace
+
 > demo.c:11:main()    This is a trace with 1 parameter
+
 > demo.c:13:main()    ERROR: This is an error trace
+
 > demo.c:15:main()    ERROR: This is an error trace with 1 parameter
