@@ -48,7 +48,7 @@ main ( void )
 Result:
 ```
 demo.c:9:main()    This is a trace
-demo.c:11:main()    This is a trace with 1 parameter
-demo.c:13:main()    ERROR: This is an error trace
-demo.c:15:main()    ERROR: This is an error trace with 1 parameter
+demo.c:12:main()    This is a trace with 1 parameter
+demo.c:15:main()    ERROR: This is an error trace
+demo.c:18:main()    ERROR: This is an error trace with 1 parameter
 ```
