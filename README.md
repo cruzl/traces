@@ -52,3 +52,13 @@ demo.c:12:main()    This is a trace with 1 parameter
 demo.c:15:main()    ERROR: This is an error trace
 demo.c:18:main()    ERROR: This is an error trace with 1 parameter
 ```
+
+
+## To do
+
+Get rid of `TRACE_P` and `ERROR_P`. Handle any number of parameters with `TRACE` and `ERROR`.
+
+
+## License
+
+This library is distributed under the MIT license. See [LICENSE](LICENSE) for further information.
