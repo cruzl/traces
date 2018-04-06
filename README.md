@@ -61,4 +61,4 @@ Get rid of `TRACE_P` and `ERROR_P`. Handle any number of parameters with `TRACE`
 
 ## License
 
-TRACES library is licensed under the MIT license. See [LICENSE](LICENSE) for further information.
+**TRACES** library is licensed under the **MIT license**. See [LICENSE](LICENSE) for further information.
