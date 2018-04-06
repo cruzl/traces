@@ -14,6 +14,11 @@ Trace:
 <file_name>:<line_number>:<function_name>    <Message>
 ```
 
+Warning:
+```
+<file_name>:<line_number>:<function_name>    WARNING: <Message>
+```
+
 Error:
 ```
 <file_name>:<line_number>:<function_name>    ERROR: <Message>
@@ -23,6 +28,8 @@ Error:
 
 * TRACE
 * TRACE_P
+* WARNING
+* WARNING_P
 * ERROR
 * ERROR_P
 
@@ -44,6 +51,12 @@ main ( void )
     // Print a trace with parameters
     TRACE_P( "This is a trace with %d parameter" , 1 );
 
+    // Print a warning trace
+    WARNING( "This is a warning trace" );
+
+    // Print a warning with parameters
+    WARNING_P( "This is a warning trace with %d parameter" , 1 );
+
     // Print an error trace
     ERROR( "This is an error trace" );
 
@@ -56,14 +69,16 @@ Result:
 ```
 demo.c:9:main()    This is a trace
 demo.c:12:main()    This is a trace with 1 parameter
-demo.c:15:main()    ERROR: This is an error trace
-demo.c:18:main()    ERROR: This is an error trace with 1 parameter
+demo.c:15:main()    WARNING: This is a warning trace
+demo.c:18:main()    WARNING: This is a warning trace with 1 parameter
+demo.c:21:main()    ERROR: This is an error trace
+demo.c:24:main()    ERROR: This is an error trace with 1 parameter
 ```
 
 
 ## To do
 
-Get rid of `TRACE_P` and `ERROR_P`. Handle any number of parameters with `TRACE` and `ERROR`.
+Get rid of `TRACE_P`, `WARNING_P`, and `ERROR_P`. Handle any number of parameters with `TRACE`, `WARNING`, and `ERROR`.
 
 
 ## License

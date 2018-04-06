@@ -51,6 +51,8 @@
 
 #define TRACE( format )                 PRINT_TRACE( format );
 #define TRACE_P( format , ... )         PRINT_TRACE( format , __VA_ARGS__ );
+#define WARNING( format )               PRINT_TRACE( "WARNING: " format );
+#define WARNING_P( format , ... )       PRINT_TRACE( "WARNING: " format , __VA_ARGS__ );
 #define ERROR( format )                 PRINT_TRACE( "ERROR: " format );
 #define ERROR_P( format , ... )         PRINT_TRACE( "ERROR: " format , __VA_ARGS__ );
 
