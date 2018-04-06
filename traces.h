@@ -46,8 +46,12 @@
 #define __TRACE     0
 #endif
 
-#define PRINT_TRACE( ... ) \
-    do { if ( __TRACE ) { fprintf( stderr , "%s:%d:%s()    " , __FILE__ , __LINE__ , __func__ ); fprintf( stderr , __VA_ARGS__ ); fprintf( stderr , "\r\n" ); } } while ( 0 )
+#define PRINT_TRACE( ... )                                                     \
+    do { if ( __TRACE ) {                                                      \
+        fprintf( stderr , "%s:%d:%s()    " , __FILE__ , __LINE__ , __func__ ); \
+        fprintf( stderr , __VA_ARGS__ );                                       \
+        fprintf( stderr , "\r\n" );                                            \
+    } } while ( 0 )
 
 #define TRACE( format )                 PRINT_TRACE( format );
 #define TRACE_P( format , ... )         PRINT_TRACE( format , __VA_ARGS__ );
