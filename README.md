@@ -10,16 +10,20 @@ This library aims to...
 ## Format
 
 Trace:
-> <file_name>:<line_number>:<function_name>    <Message>
+```
+<file_name>:<line_number>:<function_name>    <Message>
+```
 
 Error:
-> <file_name>:<line_number>:<function_name>    ERROR: <Message>
+```
+<file_name>:<line_number>:<function_name>    ERROR: <Message>
+```
 
 
 ## Usage
 
 Example:
-```c {.line-numbers}
+```c
 #define DEBUG
 
 #import "traces.h"
@@ -42,10 +46,9 @@ main ( void )
 ```
 
 Result:
-> demo.c:9:main()    This is a trace
-
-> demo.c:11:main()    This is a trace with 1 parameter
-
-> demo.c:13:main()    ERROR: This is an error trace
-
-> demo.c:15:main()    ERROR: This is an error trace with 1 parameter
+```
+demo.c:9:main()    This is a trace
+demo.c:11:main()    This is a trace with 1 parameter
+demo.c:13:main()    ERROR: This is an error trace
+demo.c:15:main()    ERROR: This is an error trace with 1 parameter
+```
