@@ -19,6 +19,13 @@ Error:
 <file_name>:<line_number>:<function_name>    ERROR: <Message>
 ```
 
+## Macro list
+
+* TRACE
+* TRACE_P
+* ERROR
+* ERROR_P
+
 
 ## Usage
 
