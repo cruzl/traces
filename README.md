@@ -4,7 +4,12 @@ Traces library in C language for embedded software.
 
 ## Description
 
-This library aims to...
+_\<insert here\>_
+
+
+## Dependencies
+
+`traces.h` expects the flag **DEBUG** to be defined in order to enable the traces. To do so, the flag `-D DEBUG` shall be added to **makefile**.
 
 
 ## Format
@@ -24,6 +29,7 @@ Error:
 <file_name>:<line_number>:<function_name>()    ERROR: <Message>
 ```
 
+
 ## Macro list
 
 * TRACE
@@ -36,10 +42,8 @@ Error:
 
 ## Usage
 
-Example:
+Example program [demo.c](demo.c):
 ```c
-#define DEBUG
-
 #import "traces.h"
 
 void
@@ -65,18 +69,24 @@ main ( void )
 }
 ```
 
+Compiling and running the example program:
+```console
+foo@bar:~$ gcc -D DEBUG demo.c -o demo
+foo@bar:~$ ./demo
+```
+
 Result:
 ```
-demo.c:9:main()    This is a trace
-demo.c:12:main()    This is a trace with 1 parameter
-demo.c:15:main()    WARNING: This is a warning trace
-demo.c:18:main()    WARNING: This is a warning trace with 1 parameter
-demo.c:21:main()    ERROR: This is an error trace
-demo.c:24:main()    ERROR: This is an error trace with 1 parameter
+demo.c:7:main()    This is a trace
+demo.c:10:main()    This is a trace with 1 parameter
+demo.c:13:main()    WARNING: This is a warning trace
+demo.c:16:main()    WARNING: This is a warning trace with 1 parameter
+demo.c:19:main()    ERROR: This is an error trace
+demo.c:22:main()    ERROR: This is an error trace with 1 parameter
 ```
 
 
-## To do
+## Todo
 
 Get rid of `TRACE_P`, `WARNING_P`, and `ERROR_P`. Handle any number of parameters with `TRACE`, `WARNING`, and `ERROR`.
 
