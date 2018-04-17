@@ -44,7 +44,7 @@ Error:
 
 Example program [demo.c](demo.c):
 ```c
-#import "traces.h"
+#include "traces.h"
 
 void
 main ( void )
