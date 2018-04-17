@@ -9,7 +9,7 @@ _\<insert here\>_
 
 ## Dependencies
 
-`traces.h` expects the flag **DEBUG** to be defined in order to enable the traces. To do so, the flag `-D DEBUG` shall be added to **makefile**.
+`traces.h` expects the flag **DEBUG** to be defined in order to enable the traces. To do this, the flag `-D DEBUG` shall be added to **makefile**.
 
 
 ## Format
