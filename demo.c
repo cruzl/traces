@@ -1,4 +1,4 @@
-#import "traces.h"
+#include "traces.h"
 
 void
 main ( void )
